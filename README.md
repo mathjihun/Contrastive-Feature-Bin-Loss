@@ -36,8 +36,7 @@ The code modifications for each model are as follows.
 
 **PixelFormer**
 
-./pixelformer/train.py
-
+./pixelformer/train.py \n
 ./pixelformer/networks/PixelFormer.py
 
 **MIM-Depth-Estimation**
