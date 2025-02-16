@@ -1,0 +1,9 @@
+--model_name pixelformer_nyu
+--encoder large07
+--dataset diode
+--max_depth 10
+
+--min_depth_eval 1e-3
+--max_depth_eval 10
+
+--checkpoint_path nyu.pth
