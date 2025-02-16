@@ -36,23 +36,19 @@ The code modifications for each model are as follows.
 
 **PixelFormer**
 
-./pixelformer/train.py \n
-./pixelformer/networks/PixelFormer.py
+./pixelformer/train.py  
+./pixelformer/networks/PixelFormer.py  
 
 **MIM-Depth-Estimation**
 
-./models/model.py
-
-./train.py
+./models/model.py  
+./train.py  
 
 **Depth Anything**
 
-./metric_depth/zoedepth/models/zoedepth/zoedepth_v1.py
-
-./metric_depth/zoedepth/trainers/zoedepth_trainer.py
-
-./metric_depth/zoedepth/models/base_models/dpt_dinov2/dpt.py
-
+./metric_depth/zoedepth/models/zoedepth/zoedepth_v1.py  
+./metric_depth/zoedepth/trainers/zoedepth_trainer.py  
+./metric_depth/zoedepth/models/base_models/dpt_dinov2/dpt.py  
 
 
 ## Acknowledgements
