@@ -29,14 +29,20 @@ to
 ```sh
 output, feature = model(input, target)
 cfbloss = CFBLoss(feature, bin_centers, target)
-loss = silog + cfbloss
+loss = silog + cfbloss * cfbloss_weights
 ```
 
 The code modifications for each model are as follows.
 
 **PixelFormer**
 
+./pixelformer/train.py
+./pixelformer/networks/PixelFormer.py
+
 **MIM-Depth-Estimation**
+
+./models/model.py
+./train.py
 
 **Depth Anything**
 
