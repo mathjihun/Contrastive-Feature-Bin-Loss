@@ -5,6 +5,33 @@ This repository contains the official implementation of CFBLoss, as presented in
 ## Usage
 We set all settings to be identical to those of the corresponding model. Please refer to each model's repository for the environment required to use it.
 
+If you want to use CFBLoss, then change the output of models from
+```sh
+return x
+```
+to
+```sh
+def BCP(...):  # make bin_centers
+    ....
+
+
+if self.training:
+    return x, bin_centers, feature
+else:
+    return x
+```
+
+Additionally, add the CFB Loss with SILog loss. For example, change
+```sh
+output = model(input, target)
+```
+to
+```sh
+output, feature = model(input, target)
+cfbloss = CFBLoss(feature, bin_centers, target)
+loss = silog + cfbloss
+```
+
 The code modifications for each model are as follows.
 
 **PixelFormer**
