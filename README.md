@@ -12,6 +12,7 @@ The code modifications for each model are as follows.
 **MIM-Depth-Estimation**
 
 **Depth Anything**
+
 ./metric_depth/zoedepth/models/zoedepth/zoedepth_v1.py
 ./metric_depth/zoedepth/trainers/zoedepth_trainer.py
 ./metric_depth/zoedepth/models/base_models/dpt_dinov2/dpt.py
