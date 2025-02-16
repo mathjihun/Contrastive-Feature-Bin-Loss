@@ -32,7 +32,7 @@ cfbloss = CFBLoss(feature, bin_centers, target)
 loss = silog + cfbloss * cfbloss_weights
 ```
 
-The code modifications for each model are as follows.
+Modified files for each model:
 
 **PixelFormer**  
 ./pixelformer/train.py  
