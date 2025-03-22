@@ -1,6 +1,6 @@
 # Contrastive Feature Bin Loss for Monocular Depth Estimation
 This repository contains the official implementation of CFBLoss, as presented in our paper:
-[**Contrastive Feature Bin Loss for Monocular Depth Estimation**](https://ieeexplore.ieee.org/document/10926715)
+[#**Contrastive Feature Bin Loss for Monocular Depth Estimation**](https://ieeexplore.ieee.org/document/10926715)
 
 ## Usage
 We set all settings to be identical to those of the corresponding model. Please refer to each model's repository for the environment required to use it.
@@ -11,7 +11,7 @@ return x
 ```
 to
 ```sh
-def BCP(...):  # make bin_centers
+def BCP(...):  # make bin_centers from PixelFormer repository (./pixelformer/networks/PixelFormer.py)
     ....
 
 
